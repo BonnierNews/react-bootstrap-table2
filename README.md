@@ -1,6 +1,6 @@
 ## BN fork
 
-[![Build Status](https://travis-ci.org/BonnierNews/react-bootstrap-table2.svg?branch=master)](https://travis-ci.org/BonnierNews/react-bootstrap-table2)  
+[![Build Status]](https://github.com/BonnierNews/react-bootstrap-table2/actions/workflows/node.js.yml/badge.svg)  
 
 This is a fork of Allen Fangs [react-bootstrap-table2](https://github.com/react-bootstrap-table/react-bootstrap-table2) repo, which is the repo for [react-bootstrap-table-next](https://www.npmjs.com/package/react-bootstrap-table-next) on npm.
 
