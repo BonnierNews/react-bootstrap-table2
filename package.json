@@ -74,7 +74,6 @@
     "jsdom": "11.2.0",
     "jsdom-global": "3.0.2",
     "lerna": "2.8.0",
-    "node-sass": "^5",
     "react-test-renderer": "16.0.0",
     "sass-loader": "7",
     "sinon": "3.2.1",
@@ -87,6 +86,7 @@
     "prop-types": "^15.8.1",
     "react": "16.4.0",
     "react-dom": "16.4.0",
+    "sass": "^1.49.9",
     "underscore": "^1.13.1"
   },
   "jest": {
