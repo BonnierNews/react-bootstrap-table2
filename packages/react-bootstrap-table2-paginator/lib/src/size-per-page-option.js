@@ -11,7 +11,6 @@ var _propTypes = _interopRequireDefault(require("prop-types"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-/* eslint jsx-a11y/href-no-hash: 0 */
 var SizePerPageOption = function SizePerPageOption(_ref) {
   var text = _ref.text,
       page = _ref.page,
