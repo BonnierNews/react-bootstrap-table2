@@ -24,7 +24,8 @@ module.exports = {
       enforce: 'pre',
       test: /\.js?$/,
       exclude: /node_modules/,
-      loader: 'eslint-loader'
+      loader: 'eslint-loader',
+      options: { presets: ['@babel/preset-react', '@babel/preset-env'] }
     }, {
       test: /\.js?$/,
       use: ['babel-loader'],
