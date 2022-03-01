@@ -1,5 +1,6 @@
 const webpack = require('webpack');
 const TerserPlugin = require('terser-webpack-plugin');
+const ESLintPlugin = require('eslint-webpack-plugin');
 
 module.exports = {
   mode: 'production',
@@ -21,12 +22,6 @@ module.exports = {
   }],
   module: {
     rules: [{
-      enforce: 'pre',
-      test: /\.js?$/,
-      exclude: /node_modules/,
-      loader: 'eslint-loader',
-      options: { presets: ['@babel/preset-react', '@babel/preset-env'] }
-    }, {
       test: /\.js?$/,
       use: ['babel-loader'],
       exclude: /node_modules/
@@ -38,6 +33,14 @@ module.exports = {
   },
   plugins: [
     new webpack.SourceMapDevToolPlugin(),
-    new webpack.optimize.AggressiveMergingPlugin()
+    new webpack.optimize.AggressiveMergingPlugin(),
+    new ESLintPlugin({
+      // Plugin options
+      extensions: ['js', 'jsx'],
+      eslintPath: require.resolve('eslint'),
+      exclude: ['/node_modules/'],
+      // ESLint class options
+      resolvePluginsRelativeTo: __dirname
+    })
   ]
 };
