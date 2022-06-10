@@ -88,13 +88,13 @@
     "gulp-shell": "^0.8.0",
     "html-webpack-plugin": "^5.5.0",
     "jest": "^28.1.1",
-    "jsdom": "^11.2.0",
+    "jsdom": "^19.0.0",
     "jsdom-global": "^3.0.2",
     "lerna": "^4.0.0",
     "react-test-renderer": "^16.4.0",
-    "sass-loader": "^12.6.0",
+    "sass-loader": "^13.0.0",
     "sinon": "^14.0.0",
-    "style-loader": "^0.17.0",
+    "style-loader": "^3.3.1",
     "webpack": "^5.69.1",
     "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^4.7.4"
@@ -107,7 +107,7 @@
     "prop-types": "^15.8.1",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
-    "sass": "^1.49.9",
+    "sass": "^1.52.3",
     "underscore": "^1.13.1"
   },
   "jest": {
