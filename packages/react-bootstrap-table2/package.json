@@ -1,11 +1,11 @@
 {
   "name": "react-bootstrap-table-next",
-  "version": "4.1.2",
-  "description": "Next generation of react-bootstrap-table",
+  "version": "1.0.2",
+  "description": "Next generation of react-bootstrap-table contributed by OlegTanchynDev",
   "main": "./lib/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BonnierNews/react-bootstrap-table2.git"
+    "url": "git+https://github.com/OlegTanchynDev/react-bootstrap-table2.git"
   },
   "license": "MIT",
   "keywords": [
