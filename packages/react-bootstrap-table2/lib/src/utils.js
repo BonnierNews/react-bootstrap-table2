@@ -20,16 +20,16 @@ function contains(list, value) {
   return list.indexOf(value) > -1;
 }
 function get(target, field) {
-  var directGet = target[field];
-  if (directGet !== undefined && directGet !== null) {
-    return directGet;
-  }
-  var pathArray = splitNested(field);
-  var result;
+  let result;
   try {
-    result = pathArray.reduce(function (curr, path) {
-      return curr[path];
-    }, target);
+    const directGet = target[field];
+    if (directGet !== undefined && directGet !== null) {
+      return directGet;
+    }
+
+    const pathArray = splitNested(field);
+
+    result = pathArray.reduce((curr, path) => curr[path], target);
   } catch (e) {}
   return result;
 }
