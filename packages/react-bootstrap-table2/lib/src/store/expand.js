@@ -10,7 +10,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 var isAnyExpands = function isAnyExpands(data, keyField) {
   var expanded = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : [];
-  var _loop = function _loop(i) {
+  var _loop = function _loop() {
     var rowKey = _utils["default"].get(data[i], keyField);
     if (typeof expanded.find(function (x) {
       return x === rowKey;
@@ -21,7 +21,7 @@ var isAnyExpands = function isAnyExpands(data, keyField) {
     }
   };
   for (var i = 0; i < data.length; i += 1) {
-    var _ret = _loop(i);
+    var _ret = _loop();
     if (_typeof(_ret) === "object") return _ret.v;
   }
   return false;

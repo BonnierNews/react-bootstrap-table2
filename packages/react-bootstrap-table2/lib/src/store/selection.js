@@ -16,7 +16,7 @@ var getSelectionSummary = function getSelectionSummary() {
   var rowKeys = data.map(function (d) {
     return _utils["default"].get(d, keyField);
   });
-  var _loop = function _loop(i) {
+  var _loop = function _loop() {
     var curr = rowKeys[i];
     if (typeof selected.find(function (x) {
       return x === curr;
@@ -27,7 +27,7 @@ var getSelectionSummary = function getSelectionSummary() {
     }
   };
   for (var i = 0; i < rowKeys.length; i += 1) {
-    _loop(i);
+    _loop();
   }
   return {
     allRowsSelected: allRowsSelected,
