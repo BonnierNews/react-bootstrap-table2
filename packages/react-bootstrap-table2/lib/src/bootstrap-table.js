@@ -31,7 +31,7 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
-function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); } /* eslint camelcase: 0 */ /* eslint arrow-body-style: 0 */
 var BootstrapTable = /*#__PURE__*/function (_PropsBaseResolver) {
   _inherits(BootstrapTable, _PropsBaseResolver);
   var _super = _createSuper(BootstrapTable);
@@ -39,6 +39,7 @@ var BootstrapTable = /*#__PURE__*/function (_PropsBaseResolver) {
     var _this;
     _classCallCheck(this, BootstrapTable);
     _this = _super.call(this, props);
+    // Exposed APIs
     _defineProperty(_assertThisInitialized(_this), "getData", function () {
       return _this.visibleRows();
     });
@@ -56,8 +57,6 @@ var BootstrapTable = /*#__PURE__*/function (_PropsBaseResolver) {
         }
       }
     }
-
-    // Exposed APIs
   }, {
     key: "render",
     value: function render() {
