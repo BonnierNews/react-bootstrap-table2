@@ -1,6 +1,6 @@
 {
   "name": "react-bootstrap-table2",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "private": true,
   "description": "Rebuilt for react-bootstrap-table",
   "main": "index.js",
@@ -100,7 +100,8 @@
     "webpack-dev-server": "^4.11.1"
   },
   "resolutions": {
-    "cheerio": "1.0.0-rc.10"
+    "cheerio": "1.0.0-rc.10",
+    "semver": "^7.5.2"
   },
   "dependencies": {
     "classnames": "^2.3.1",
