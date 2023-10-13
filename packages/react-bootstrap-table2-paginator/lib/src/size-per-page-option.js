@@ -46,5 +46,4 @@ SizePerPageOption.propTypes = {
 SizePerPageOption.defaultProps = {
   bootstrap4: false
 };
-var _default = SizePerPageOption;
-exports["default"] = _default;
+var _default = exports["default"] = SizePerPageOption;

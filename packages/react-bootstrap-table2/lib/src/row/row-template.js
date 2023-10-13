@@ -53,5 +53,4 @@ RowTemplate.propTypes = {
   selectRow: _propTypes["default"].object,
   expandRow: _propTypes["default"].object
 };
-var _default = RowTemplate;
-exports["default"] = _default;
+var _default = exports["default"] = RowTemplate;

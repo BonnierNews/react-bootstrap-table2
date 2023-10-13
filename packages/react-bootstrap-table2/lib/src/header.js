@@ -106,5 +106,4 @@ Header.propTypes = {
   expandRow: _propTypes["default"].object,
   filterPosition: _propTypes["default"].oneOf([_const["default"].FILTERS_POSITION_TOP, _const["default"].FILTERS_POSITION_INLINE, _const["default"].FILTERS_POSITION_BOTTOM])
 };
-var _default = Header;
-exports["default"] = _default;
+var _default = exports["default"] = Header;

@@ -16,7 +16,7 @@ var endIndex = function endIndex(page, sizePerPage, pageStartIndex) {
 var startIndex = function startIndex(end, sizePerPage) {
   return end - (sizePerPage - 1);
 };
-var alignPage = function alignPage(dataSize, prevDataSize, page, sizePerPage, pageStartIndex) {
+var alignPage = exports.alignPage = function alignPage(dataSize, prevDataSize, page, sizePerPage, pageStartIndex) {
   if (prevDataSize < dataSize) return page;
   if (page < pageStartIndex) return pageStartIndex;
   if (dataSize <= 0) return pageStartIndex;
@@ -29,8 +29,7 @@ var alignPage = function alignPage(dataSize, prevDataSize, page, sizePerPage, pa
   }
   return page;
 };
-exports.alignPage = alignPage;
-var getByCurrPage = function getByCurrPage(data, page, sizePerPage, pageStartIndex) {
+var getByCurrPage = exports.getByCurrPage = function getByCurrPage(data, page, sizePerPage, pageStartIndex) {
   var dataSize = data.length;
   if (!dataSize) return [];
   var end = endIndex(page, sizePerPage, pageStartIndex);
@@ -42,4 +41,3 @@ var getByCurrPage = function getByCurrPage(data, page, sizePerPage, pageStartInd
   }
   return result;
 };
-exports.getByCurrPage = getByCurrPage;

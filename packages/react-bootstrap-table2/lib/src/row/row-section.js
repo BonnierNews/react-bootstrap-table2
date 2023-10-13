@@ -24,5 +24,4 @@ RowSection.defaultProps = {
   content: null,
   colSpan: 1
 };
-var _default = RowSection;
-exports["default"] = _default;
+var _default = exports["default"] = RowSection;

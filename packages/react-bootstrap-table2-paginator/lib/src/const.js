@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports["default"] = void 0;
-var _default = {
+var _default = exports["default"] = {
   PAGINATION_SIZE: 5,
   PAGE_START_INDEX: 1,
   With_FIRST_AND_LAST: true,
@@ -23,4 +23,3 @@ var _default = {
   HIDE_SIZE_PER_PAGE: false,
   HIDE_PAGE_LIST_ONLY_ONE_PAGE: false
 };
-exports["default"] = _default;

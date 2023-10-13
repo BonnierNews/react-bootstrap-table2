@@ -24,5 +24,4 @@ PaginationTotal.propTypes = {
 PaginationTotal.defaultProps = {
   paginationTotalRenderer: undefined
 };
-var _default = PaginationTotal;
-exports["default"] = _default;
+var _default = exports["default"] = PaginationTotal;

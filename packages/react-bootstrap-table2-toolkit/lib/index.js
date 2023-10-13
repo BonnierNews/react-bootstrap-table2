@@ -28,7 +28,5 @@ var _search = _interopRequireDefault(require("./src/search"));
 var _csv = _interopRequireDefault(require("./src/csv"));
 var _columnToggle = _interopRequireDefault(require("./src/column-toggle"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-var _default = _provider["default"];
-exports["default"] = _default;
-var ToolkitContext = _context["default"];
-exports.ToolkitContext = ToolkitContext;
+var _default = exports["default"] = _provider["default"];
+var ToolkitContext = exports.ToolkitContext = _context["default"];

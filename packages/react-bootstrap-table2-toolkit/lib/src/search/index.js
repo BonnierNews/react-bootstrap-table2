@@ -7,8 +7,7 @@ exports["default"] = void 0;
 var _SearchBar = _interopRequireDefault(require("./SearchBar"));
 var _clearButton = _interopRequireDefault(require("./clear-button"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-var _default = {
+var _default = exports["default"] = {
   SearchBar: _SearchBar["default"],
   ClearSearchButton: _clearButton["default"]
 };
-exports["default"] = _default;

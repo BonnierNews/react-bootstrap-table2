@@ -29,5 +29,4 @@ var SortCaret = function SortCaret(_ref) {
 SortCaret.propTypes = {
   order: _propTypes["default"].oneOf([_const["default"].SORT_ASC, _const["default"].SORT_DESC]).isRequired
 };
-var _default = SortCaret;
-exports["default"] = _default;
+var _default = exports["default"] = SortCaret;
