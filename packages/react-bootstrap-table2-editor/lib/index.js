@@ -9,7 +9,7 @@ var _rowConsumer = _interopRequireDefault(require("./src/row-consumer"));
 var _editingCellConsumer = _interopRequireDefault(require("./src/editing-cell-consumer"));
 var _const = require("./src/const");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-var _default = function _default() {
+var _default = exports["default"] = function _default() {
   var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
   return {
     createContext: _context["default"],
@@ -20,6 +20,4 @@ var _default = function _default() {
     options: options
   };
 };
-exports["default"] = _default;
-var Type = _const.EDITTYPE;
-exports.Type = Type;
+var Type = exports.Type = _const.EDITTYPE;

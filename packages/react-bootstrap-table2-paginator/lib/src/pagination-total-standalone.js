@@ -12,5 +12,4 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 var PaginationTotalStandalone = function PaginationTotalStandalone(props) {
   return /*#__PURE__*/_react["default"].createElement(_paginationTotal["default"], props);
 };
-var _default = (0, _standaloneAdapter["default"])((0, _paginationTotalAdapter["default"])(PaginationTotalStandalone));
-exports["default"] = _default;
+var _default = exports["default"] = (0, _standaloneAdapter["default"])((0, _paginationTotalAdapter["default"])(PaginationTotalStandalone));

@@ -22,7 +22,7 @@ function comparator(a, b) {
   }
   return result;
 }
-var sort = function sort(data, sortOrder, _ref) {
+var sort = exports.sort = function sort(data, sortOrder, _ref) {
   var dataField = _ref.dataField,
     sortFunc = _ref.sortFunc,
     sortValue = _ref.sortValue;
@@ -51,12 +51,10 @@ var sort = function sort(data, sortOrder, _ref) {
   });
   return _data;
 };
-exports.sort = sort;
-var nextOrder = function nextOrder(currentSortColumn, _ref2) {
+var nextOrder = exports.nextOrder = function nextOrder(currentSortColumn, _ref2) {
   var sortOrder = _ref2.sortOrder,
     sortColumn = _ref2.sortColumn;
   var defaultOrder = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : _const["default"].SORT_DESC;
   if (!sortColumn || currentSortColumn.dataField !== sortColumn.dataField) return defaultOrder;
   return sortOrder === _const["default"].SORT_DESC ? _const["default"].SORT_ASC : _const["default"].SORT_DESC;
 };
-exports.nextOrder = nextOrder;

@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.typeConvert = void 0;
 var _const = _interopRequireDefault(require("../const"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-var typeConvert = function typeConvert(type, value) {
+var typeConvert = exports.typeConvert = function typeConvert(type, value) {
   if (type === _const["default"].TYPE_STRING) {
     return String(value);
   } else if (type === _const["default"].TYPE_NUMBER) {
@@ -21,4 +21,3 @@ var typeConvert = function typeConvert(type, value) {
   }
   return value;
 };
-exports.typeConvert = typeConvert;

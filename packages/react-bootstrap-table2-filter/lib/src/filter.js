@@ -6,13 +6,13 @@ Object.defineProperty(exports, "__esModule", {
 exports.filters = exports.filterFactory = exports.filterByText = exports.filterByNumber = exports.filterByDate = exports.filterByArray = void 0;
 var _const = require("./const");
 var _comparison = require("./comparison");
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
 function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
 function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
-function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); } /* eslint eqeqeq: 0 */ /* eslint no-console: 0 */
-var filterByText = function filterByText(_) {
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); } /* eslint eqeqeq: 0 */ /* eslint no-console: 0 */
+var filterByText = exports.filterByText = function filterByText(_) {
   return function (data, dataField, _ref, customFilterValue) {
     var _ref$filterVal = _ref.filterVal,
       userInput = _ref$filterVal === void 0 ? '' : _ref$filterVal,
@@ -37,8 +37,7 @@ var filterByText = function filterByText(_) {
     });
   };
 };
-exports.filterByText = filterByText;
-var filterByNumber = function filterByNumber(_) {
+var filterByNumber = exports.filterByNumber = function filterByNumber(_) {
   return function (data, dataField, _ref2, customFilterValue) {
     var _ref2$filterVal = _ref2.filterVal,
       comparator = _ref2$filterVal.comparator,
@@ -83,8 +82,7 @@ var filterByNumber = function filterByNumber(_) {
     });
   };
 };
-exports.filterByNumber = filterByNumber;
-var filterByDate = function filterByDate(_) {
+var filterByDate = exports.filterByDate = function filterByDate(_) {
   return function (data, dataField, _ref3, customFilterValue) {
     var _ref3$filterVal = _ref3.filterVal,
       comparator = _ref3$filterVal.comparator,
@@ -166,8 +164,7 @@ var filterByDate = function filterByDate(_) {
     });
   };
 };
-exports.filterByDate = filterByDate;
-var filterByArray = function filterByArray(_) {
+var filterByArray = exports.filterByArray = function filterByArray(_) {
   return function (data, dataField, _ref4) {
     var filterVal = _ref4.filterVal,
       comparator = _ref4.comparator;
@@ -190,8 +187,7 @@ var filterByArray = function filterByArray(_) {
     });
   };
 };
-exports.filterByArray = filterByArray;
-var filterFactory = function filterFactory(_) {
+var filterFactory = exports.filterFactory = function filterFactory(_) {
   return function (filterType) {
     switch (filterType) {
       case _const.FILTER_TYPE.MULTISELECT:
@@ -208,8 +204,7 @@ var filterFactory = function filterFactory(_) {
     }
   };
 };
-exports.filterFactory = filterFactory;
-var filters = function filters(data, columns, _) {
+var filters = exports.filters = function filters(data, columns, _) {
   return function (currFilters) {
     var clearFilters = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
     var factory = filterFactory(_);
@@ -250,4 +245,3 @@ var filters = function filters(data, columns, _) {
     return result;
   };
 };
-exports.filters = filters;

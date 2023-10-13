@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports["default"] = void 0;
-var _default = {
+var _default = exports["default"] = {
   SORT_ASC: 'asc',
   SORT_DESC: 'desc',
   ROW_SELECT_SINGLE: 'radio',
@@ -23,4 +23,3 @@ var _default = {
   FILTERS_POSITION_TOP: 'top',
   FILTERS_POSITION_BOTTOM: 'bottom'
 };
-exports["default"] = _default;

@@ -25,5 +25,4 @@ var SortSymbol = function SortSymbol() {
     })));
   });
 };
-var _default = SortSymbol;
-exports["default"] = _default;
+var _default = exports["default"] = SortSymbol;

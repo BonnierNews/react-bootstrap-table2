@@ -66,5 +66,4 @@ Filters.propTypes = {
 Filters.defaultProps = {
   position: _const["default"].FILTERS_POSITION_TOP
 };
-var _default = Filters;
-exports["default"] = _default;
+var _default = exports["default"] = Filters;

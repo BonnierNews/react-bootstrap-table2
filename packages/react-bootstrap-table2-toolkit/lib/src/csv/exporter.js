@@ -8,7 +8,7 @@ var _fileSaver = _interopRequireDefault(require("file-saver"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 /* eslint no-unneeded-ternary: 0 */
 
-var getMetaInfo = function getMetaInfo(columns) {
+var getMetaInfo = exports.getMetaInfo = function getMetaInfo(columns) {
   return columns.map(function (column) {
     return {
       field: column.dataField,
@@ -27,8 +27,7 @@ var getMetaInfo = function getMetaInfo(columns) {
     return _["export"];
   });
 };
-exports.getMetaInfo = getMetaInfo;
-var transform = function transform(data, meta, columns, _, _ref) {
+var transform = exports.transform = function transform(data, meta, columns, _, _ref) {
   var separator = _ref.separator,
     ignoreHeader = _ref.ignoreHeader,
     ignoreFooter = _ref.ignoreFooter;
@@ -71,8 +70,7 @@ var transform = function transform(data, meta, columns, _, _ref) {
   }
   return content;
 };
-exports.transform = transform;
-var save = function save(content, _ref2) {
+var save = exports.save = function save(content, _ref2) {
   var noAutoBOM = _ref2.noAutoBOM,
     fileName = _ref2.fileName,
     blobType = _ref2.blobType;
@@ -80,4 +78,3 @@ var save = function save(content, _ref2) {
     type: blobType
   }), fileName, noAutoBOM);
 };
-exports.save = save;

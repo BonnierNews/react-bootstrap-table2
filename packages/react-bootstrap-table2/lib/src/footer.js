@@ -47,5 +47,4 @@ Footer.propTypes = {
   selectRow: _propTypes["default"].object,
   expandRow: _propTypes["default"].object
 };
-var _default = Footer;
-exports["default"] = _default;
+var _default = exports["default"] = Footer;
