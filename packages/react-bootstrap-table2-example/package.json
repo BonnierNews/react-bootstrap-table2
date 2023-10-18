@@ -18,8 +18,8 @@
     "react-dom": "^16.4.0"
   },
   "devDependencies": {
-    "@storybook/addon-console": "^1.2.3",
-    "@storybook/react": "^6.5.8",
+    "@storybook/addon-console": "^2.0.0",
+    "@storybook/react": "^7.5.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-env": "^1.7.0",
     "react-redux": "^8.0.2",
