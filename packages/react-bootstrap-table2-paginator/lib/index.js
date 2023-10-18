@@ -31,14 +31,13 @@ var _paginationListStandalone = _interopRequireDefault(require("./src/pagination
 var _sizePerPageDropdownStandalone = _interopRequireDefault(require("./src/size-per-page-dropdown-standalone"));
 var _paginationTotalStandalone = _interopRequireDefault(require("./src/pagination-total-standalone"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-var _default = function _default() {
+var _default = exports["default"] = function _default() {
   var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
   return {
     createContext: _dataContext["default"],
     options: options
   };
 };
-exports["default"] = _default;
 var _createBaseContext = (0, _stateContext["default"])(),
   Provider = _createBaseContext.Provider,
   Consumer = _createBaseContext.Consumer;
@@ -50,5 +49,4 @@ var CustomizableProvider = function CustomizableProvider(props) {
 CustomizableProvider.propTypes = {
   children: _propTypes["default"].func.isRequired
 };
-var PaginationProvider = CustomizableProvider;
-exports.PaginationProvider = PaginationProvider;
+var PaginationProvider = exports.PaginationProvider = CustomizableProvider;

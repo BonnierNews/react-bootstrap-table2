@@ -13,5 +13,4 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 var PaginationListStandalone = function PaginationListStandalone(props) {
   return /*#__PURE__*/_react["default"].createElement(_paginationList["default"], props);
 };
-var _default = (0, _standaloneAdapter["default"])((0, _paginationHandler["default"])((0, _paginationListAdapter["default"])(PaginationListStandalone)));
-exports["default"] = _default;
+var _default = exports["default"] = (0, _standaloneAdapter["default"])((0, _paginationHandler["default"])((0, _paginationListAdapter["default"])(PaginationListStandalone)));

@@ -7,7 +7,7 @@ exports.unSelectableKeys = exports.selectableKeys = exports.getSelectionSummary 
 var _utils = _interopRequireDefault(require("../utils"));
 var _rows = require("./rows");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-var getSelectionSummary = function getSelectionSummary() {
+var getSelectionSummary = exports.getSelectionSummary = function getSelectionSummary() {
   var data = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
   var keyField = arguments.length > 1 ? arguments[1] : undefined;
   var selected = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : [];
@@ -34,8 +34,7 @@ var getSelectionSummary = function getSelectionSummary() {
     allRowsNotSelected: allRowsNotSelected
   };
 };
-exports.getSelectionSummary = getSelectionSummary;
-var selectableKeys = function selectableKeys() {
+var selectableKeys = exports.selectableKeys = function selectableKeys() {
   var data = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
   var keyField = arguments.length > 1 ? arguments[1] : undefined;
   var skips = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : [];
@@ -50,8 +49,7 @@ var selectableKeys = function selectableKeys() {
     return _utils["default"].get(row, keyField);
   });
 };
-exports.selectableKeys = selectableKeys;
-var unSelectableKeys = function unSelectableKeys(selected) {
+var unSelectableKeys = exports.unSelectableKeys = function unSelectableKeys(selected) {
   var skips = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : [];
   if (skips.length === 0) {
     return [];
@@ -60,8 +58,7 @@ var unSelectableKeys = function unSelectableKeys(selected) {
     return _utils["default"].contains(skips, x);
   });
 };
-exports.unSelectableKeys = unSelectableKeys;
-var getSelectedRows = function getSelectedRows() {
+var getSelectedRows = exports.getSelectedRows = function getSelectedRows() {
   var data = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
   var keyField = arguments.length > 1 ? arguments[1] : undefined;
   var selected = arguments.length > 2 ? arguments[2] : undefined;
@@ -71,4 +68,3 @@ var getSelectedRows = function getSelectedRows() {
     return !!x;
   });
 };
-exports.getSelectedRows = getSelectedRows;

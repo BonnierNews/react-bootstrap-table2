@@ -22,5 +22,4 @@ EditorIndicator.propTypes = {
 EditorIndicator.defaultProps = {
   invalidMessage: null
 };
-var _default = EditorIndicator;
-exports["default"] = _default;
+var _default = exports["default"] = EditorIndicator;

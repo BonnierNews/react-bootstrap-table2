@@ -13,5 +13,4 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 var SizePerPageDropdownStandalone = function SizePerPageDropdownStandalone(props) {
   return /*#__PURE__*/_react["default"].createElement(_sizePerPageDropdown["default"], props);
 };
-var _default = (0, _standaloneAdapter["default"])((0, _paginationHandler["default"])((0, _sizePerPageDropdownAdapter["default"])(SizePerPageDropdownStandalone)));
-exports["default"] = _default;
+var _default = exports["default"] = (0, _standaloneAdapter["default"])((0, _paginationHandler["default"])((0, _sizePerPageDropdownAdapter["default"])(SizePerPageDropdownStandalone)));

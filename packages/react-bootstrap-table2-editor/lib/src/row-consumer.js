@@ -9,7 +9,7 @@ var _const = require("./const");
 var _context = require("./context");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); } /* eslint react/prop-types: 0 */
-var _default = function _default(Component, selectRowEnabled) {
+var _default = exports["default"] = function _default(Component, selectRowEnabled) {
   var renderWithCellEdit = function renderWithCellEdit(props, cellEdit) {
     var key = props.value;
     var editableRow = !(cellEdit.nonEditableRows.length > 0 && cellEdit.nonEditableRows.indexOf(key) > -1);
@@ -34,4 +34,3 @@ var _default = function _default(Component, selectRowEnabled) {
   withConsumer.displayName = 'WithCellEditingRowConsumer';
   return withConsumer;
 };
-exports["default"] = _default;

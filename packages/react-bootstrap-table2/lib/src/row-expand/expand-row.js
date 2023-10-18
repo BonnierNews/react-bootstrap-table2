@@ -43,5 +43,4 @@ ExpandRow.defaultProps = {
   onClosed: null,
   className: ''
 };
-var _default = ExpandRow;
-exports["default"] = _default;
+var _default = exports["default"] = ExpandRow;

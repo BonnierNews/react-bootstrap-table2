@@ -16,5 +16,4 @@ var Toolkitprovider = function Toolkitprovider(props) {
 Toolkitprovider.propTypes = {
   children: _propTypes["default"].func.isRequired
 };
-var _default = Toolkitprovider;
-exports["default"] = _default;
+var _default = exports["default"] = Toolkitprovider;

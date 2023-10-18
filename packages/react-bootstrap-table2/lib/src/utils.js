@@ -87,7 +87,7 @@ function debounce(func, wait, immediate) {
     }
   };
 }
-var _default = Object.assign(_underscore["default"], {
+var _default = exports["default"] = Object.assign(_underscore["default"], {
   get: get,
   set: set,
   isDefined: isDefined,
@@ -96,4 +96,3 @@ var _default = Object.assign(_underscore["default"], {
   debounce: debounce,
   contains: contains
 });
-exports["default"] = _default;

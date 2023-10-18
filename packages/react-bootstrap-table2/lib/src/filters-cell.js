@@ -47,5 +47,4 @@ FiltersCell.defaultProps = {
   onFilter: function onFilter() {},
   onExternalFilter: function onExternalFilter() {}
 };
-var _default = FiltersCell;
-exports["default"] = _default;
+var _default = exports["default"] = FiltersCell;

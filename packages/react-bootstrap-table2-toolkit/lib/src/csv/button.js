@@ -34,5 +34,4 @@ ExportCSVButton.defaultProps = {
   className: '',
   style: {}
 };
-var _default = ExportCSVButton;
-exports["default"] = _default;
+var _default = exports["default"] = ExportCSVButton;

@@ -22,5 +22,4 @@ Caption.propTypes = {
   children: _propTypes["default"].oneOfType([_propTypes["default"].node, _propTypes["default"].string]),
   bootstrap4: _propTypes["default"].bool
 };
-var _default = Caption;
-exports["default"] = _default;
+var _default = exports["default"] = Caption;
