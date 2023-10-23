@@ -6190,9 +6190,10 @@ gulp-shell@^0.8.0:
     through2 "^3.0.1"
     tslib "^1.10.0"
 
-"gulp@BonnierNews/gulp#semver:^4.3.0":
-  version "4.3.0"
-  resolved "https://codeload.github.com/BonnierNews/gulp/tar.gz/713576fea9be55e90ee4f17e0b4bc7a44b540490"
+"gulp@BonnierNews/gulp#semver:^5.0.5":
+  version "5.0.5"
+  uid c49abfdfd34983c55a9b61e60b6c734e652c55b0
+  resolved "https://codeload.github.com/BonnierNews/gulp/tar.gz/c49abfdfd34983c55a9b61e60b6c734e652c55b0"
   dependencies:
     glob-watcher "BonnierNews/glob-watcher#semver:^6.0.0"
     gulp-cli "^2.3.0"
